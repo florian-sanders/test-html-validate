@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'html-validate-test',
+    title: 'html-validate-test aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', // should throw warning for long title
     htmlAttrs: {
       lang: 'en'
     },
@@ -50,14 +50,13 @@ export default {
 
   htmlValidator: {
     usePrettier: true,
-    failOnError: false,
     options: {
       extends: [
       'html-validate:document',
       'html-validate:recommended'
       ],
       rules: {
-        /*'aria-label-misuse': 'warn',
+        'aria-label-misuse': 'warn',
         'attr-case': 'warn',
         'attr-delimiter': 'warn',
         'attr-quotes': 'warn',
@@ -83,7 +82,7 @@ export default {
         'heading-level': 'warn',
         'input-attributes': 'warn',
         'input-missing-label': 'warn',
-        'long-title': 'error',
+        'long-title': 'warn',
         'meta-refresh': 'warn',
         'missing-doctype': 'warn',
         'multiple-labeled-controls': 'warn',
@@ -99,7 +98,7 @@ export default {
         'no-multiple-main': 'warn',
         'no-raw-characters': 'warn',
         'no-redundant-for': 'off',
-        'no-redundant-role': 'error',
+        'no-redundant-role': 'warn',
         'no-self-closing': 'warn',
         'no-trailing-whitespace': 'warn',
         'no-utf8-bom': 'warn',
@@ -119,21 +118,7 @@ export default {
         'wcag/h36': 'warn',
         'wcag/h37': 'warn',
         'wcag/h67': 'warn',
-        'wcag/h71': 'warn'*/
-        'off-inline-style': 'off',
-        'input-missing-label': 'off',
-        'heading-level': 'off',
-        'attr-spacing': 'error',
-        'no-redundant-for': 'error',
-        'no-redundant-role': 'off',
-        'prefer-button': 'off',
-        'prefer-native-element': 'off',
-        'svg-focusable': 'off',
-        'wcag/h32': 'off',
-        'element-required-attributes': 'warn',
-        'attr-quotes': ['off', {
-          "style": "auto"
-        }],
+        'wcag/h71': 'warn'
       }
     }
   }
